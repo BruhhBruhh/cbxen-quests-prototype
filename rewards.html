@@ -10,17 +10,26 @@
     <header>
         <h1>$cbXEN Ecosystem Quests</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="quests.html">Quests</a>
-            <a href="rewards.html">Rewards</a>
+            <ul class="nav-menu">
+                <li>
+                    <a href="#">Menu</a>
+                    <ul class="dropdown">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="quests.html">Quests</a></li>
+                        <li><a href="rewards.html">Rewards</a></li>
+                    </ul>
+                </li>
+            </ul>
         </nav>
     </header>
     <main>
-        <h2>Your Rewards</h2>
-        <p><strong>PoP Points:</strong> <span id="pop-points">0</span></p>
-        <p><strong>cRank:</strong> <span id="crank">Beginner</span></p>
-        <p><strong>Minted $cbXEN:</strong> 100 (30% contributed to liquidity)</p>
-        <p><strong>Liquidity Contribution:</strong> 30 $cbXEN added to $cbXEN/ETH pool</p>
+        <div class="rewards-box">
+            <h2>Your Rewards</h2>
+            <p><strong>PoP Points:</strong> <span id="pop-points">0</span></p>
+            <p><strong>cRank:</strong> <span id="crank">Beginner</span></p>
+            <p><strong>Minted $cbXEN:</strong> 100 (30% contributed to liquidity)</p>
+            <p><strong>Liquidity Contribution:</strong> 30 $cbXEN added to $cbXEN/ETH pool</p>
+        </div>
     </main>
     <script src="script.js"></script>
     <script>

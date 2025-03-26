@@ -145,3 +145,35 @@ section p, .quest p, .rewards-box p {
     background-color: #1c2526; /* Black hover background */
     color: #ffffff; /* White text on hover */
 }
+
+/* Header and Headings */
+header h1 {
+    margin: 0;
+    color: #d3d3d3; /* Silver header text */
+    font-size: 2.5rem; /* Larger heading */
+}
+
+section h2, .quest h3, .rewards-box h2 {
+    color: #0052cc; /* Blue headings */
+    margin-top: 0;
+    font-size: 1.8rem; /* Larger subheading */
+}
+
+/* Box Styles with Glow and Transparency */
+section, .quest, .rewards-box {
+    background-color: rgba(42, 52, 57, 0.9); /* Slightly transparent black for boxes */
+    border: 2px solid #c0c0c0; /* Silver border */
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 82, 204, 0.3); /* Add blue glow */
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 600px; /* Limit box width for better centering */
+    text-align: center; /* Center text inside boxes */
+}
+
+section:hover, .quest:hover, .rewards-box:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 82, 204, 0.5); /* Stronger glow on hover */
+}

@@ -1,18 +1,27 @@
+/* Import Futuristic Font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
 /* Reset and Base Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Orbitron', sans-serif; /* Futuristic font */
     margin: 0;
     padding: 0;
     background-color: #1c2526; /* Black background */
     color: #d3d3d3; /* Silver text */
+    min-height: 100vh; /* Ensure body takes full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
 }
 
 /* Header and Navigation */
 header {
     background-color: #0052cc; /* Blue header */
     padding: 1rem;
-    text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    text-align: center; /* Center header content */
 }
 
 header h1 {
@@ -56,7 +65,8 @@ nav {
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Center dropdown horizontally */
     background-color: #0052cc; /* Blue dropdown background */
     min-width: 150px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -82,7 +92,11 @@ nav {
 main {
     padding: 2rem;
     max-width: 800px;
-    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text inside main */
 }
 
 /* Box Styles for Content */
@@ -94,6 +108,9 @@ section, .quest, .rewards-box {
     margin: 1rem 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease;
+    width: 100%;
+    max-width: 600px; /* Limit box width for better centering */
+    text-align: center; /* Center text inside boxes */
 }
 
 section:hover, .quest:hover, .rewards-box:hover {
@@ -121,6 +138,7 @@ section p, .quest p, .rewards-box p {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin: 0 auto; /* Center buttons */
 }
 
 .btn:hover, .quest button:hover {
